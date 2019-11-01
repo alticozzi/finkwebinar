@@ -8,6 +8,8 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
 import org.apache.log4j.Logger;
 import it.almaviva.webinar.flink.taxianalyzer.deserialization.DeserializationTaxiPosition;
+import it.almaviva.webinar.flink.taxianalyzer.elaboration.FilterCity;
+import it.almaviva.webinar.flink.taxianalyzer.elaboration.FlatMapDistrictInfo;
 import it.almaviva.webinar.flink.taxianalyzer.model.taxi.TaxiPosition;
 
 public class TaxiAnalyzer 
@@ -60,7 +62,11 @@ public class TaxiAnalyzer
 
         DataStreamSource<TaxiPosition> taxiPositionStream = env.addSource(taxiPositionResource);
         
-        taxiPositionStream.print();
+        taxiPositionStream
+                .filter(new FilterCity())
+                .keyBy("district")
+                .flatMap(new FlatMapDistrictInfo())
+                .print();
         
         env.execute("Taxi Analyzer");
     }
