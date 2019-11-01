@@ -1,15 +1,18 @@
 package it.almaviva.webinar.flink.taxianalyzer;
 
 import java.util.Properties;
+import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer010;
 import org.apache.log4j.Logger;
 import it.almaviva.webinar.flink.taxianalyzer.deserialization.DeserializationTaxiPosition;
 import it.almaviva.webinar.flink.taxianalyzer.elaboration.FilterCity;
 import it.almaviva.webinar.flink.taxianalyzer.elaboration.FlatMapDistrictInfo;
+import it.almaviva.webinar.flink.taxianalyzer.elaboration.MapJsonDistrictInfo;
 import it.almaviva.webinar.flink.taxianalyzer.model.taxi.TaxiPosition;
 
 public class TaxiAnalyzer 
@@ -66,7 +69,8 @@ public class TaxiAnalyzer
                 .filter(new FilterCity())
                 .keyBy("district")
                 .flatMap(new FlatMapDistrictInfo())
-                .print();
+                .map(new MapJsonDistrictInfo())
+                .addSink(new FlinkKafkaProducer010<>(parameterTool.get("bootstrap.servers"), parameterTool.get("topic.output"), new SimpleStringSchema()));
         
         env.execute("Taxi Analyzer");
     }
