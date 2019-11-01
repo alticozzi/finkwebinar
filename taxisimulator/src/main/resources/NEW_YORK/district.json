@@ -1,0 +1,85 @@
+{
+	"numTaxi": "200",
+	"districts": [
+		{
+			"name": "Bedford-Stuyvesant",
+			"priority": 3
+		},
+		{
+			"name": "Belmont (Bronx)",
+			"priority": 7
+		},
+		{
+			"name": "Borough Park",
+			"priority": 3
+		},
+		{
+			"name": "Brighton Beach",
+			"priority": 6
+		},
+		{
+			"name": "Bushwick",
+			"priority": 4
+		},
+		{
+			"name": "Castle Hill (Bronx)",
+			"priority": 1
+		},
+		{
+			"name": "Chelsea (Manhattan)",
+			"priority": 9
+		},
+		{
+			"name": "Coney Island",
+			"priority": 1
+		},
+		{
+			"name": "Crotona Park East",
+			"priority": 4
+		},
+		{
+			"name": "Forest Hills (Queens)",
+			"priority": 8
+		},
+		{
+			"name": "Greenwich Village",
+			"priority": 5
+		},
+		{
+			"name": "Jackson Heights",
+			"priority": 7
+		},
+		{
+			"name": "Kips Bay",
+			"priority": 1
+		},
+		{
+			"name": "Long Island City",
+			"priority": 9
+		},
+		{
+			"name": "Lower Manhattan",
+			"priority": 5
+		},
+		{
+			"name": "Midtown Manhattan",
+			"priority": 9
+		},
+		{
+			"name": "Harlem italiano",
+			"priority": 6
+		},
+		{
+			"name": "Tompkinsville (Staten Island)",
+			"priority": 2
+		},
+		{
+			"name": "Tribeca",
+			"priority": 6
+		},
+		{
+			"name": "West Village",
+			"priority": 6
+		}
+	]
+}

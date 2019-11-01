@@ -1,0 +1,93 @@
+{
+	"numTaxi": "100",
+	"districts": [
+		{
+			"name": "Centro storico di Genova",
+			"priority": 8
+		},
+		{
+			"name": "Acquasanta",
+			"priority": 2
+		},
+		{
+			"name": "Albaro",
+			"priority": 6
+		},
+		{
+			"name": "Apparizione",
+			"priority": 2
+		},
+		{
+			"name": "Bolzaneto",
+			"priority": 3
+		},
+		{
+			"name": "Borgoratti",
+			"priority": 2
+		},
+		{
+			"name": "Borzoli",
+			"priority": 2
+		},
+		{
+			"name": "Campi",
+			"priority": 1
+		},
+		{
+			"name": "Castelletto",
+			"priority": 4
+		},
+		{
+			"name": "Cornigliano",
+			"priority": 4
+		},
+		{
+			"name": "Foce",
+			"priority": 7
+		},
+		{
+			"name": "Marassi",
+			"priority": 3
+		},
+		{
+			"name": "Multedo",
+			"priority": 2
+		},
+		{
+			"name": "Nervi",
+			"priority": 4
+		},
+		{
+			"name": "Pegli",
+			"priority": 2
+		},
+		{
+			"name": "Pra'",
+			"priority": 1
+		},
+		{
+			"name": "Quarto dei Mille",
+			"priority": 1
+		},
+		{
+			"name": "Quinto al Mare",
+			"priority": 3
+		},
+		{
+			"name": "Righi",
+			"priority": 2
+		},
+		{
+			"name": "Sestri Ponente",
+			"priority": 5
+		},
+		{
+			"name": "Sturla",
+			"priority": 2
+		},
+		{
+			"name": "Voltri",
+			"priority": 4
+		}
+	]
+}

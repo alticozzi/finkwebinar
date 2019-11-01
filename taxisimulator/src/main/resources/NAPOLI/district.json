@@ -1,0 +1,73 @@
+{
+	"numTaxi": "100",
+	"districts": [
+		{
+			"name": "Arenella",
+			"priority": 8
+		},
+		{
+			"name": "Avvocata",
+			"priority": 4
+		},
+		{
+			"name": "Barra",
+			"priority": 3
+		},
+		{
+			"name": "Chiaia",
+			"priority": 2
+		},
+		{
+			"name": "Fuorigrotta",
+			"priority": 5
+		},
+		{
+			"name": "Marianella",
+			"priority": 6
+		},
+		{
+			"name": "Mercato",
+			"priority": 8
+		},
+		{
+			"name": "Montecalvario",
+			"priority": 1
+		},
+		{
+			"name": "Porto",
+			"priority": 2
+		},
+		{
+			"name": "San Carlo all'Arena",
+			"priority": 7
+		},
+		{
+			"name": "San Ferdinando",
+			"priority": 4
+		},
+		{
+			"name": "San Giovanni a Teduccio",
+			"priority": 5
+		},
+		{
+			"name": "San Giuseppe",
+			"priority": 6
+		},
+		{
+			"name": "San Lorenzo",
+			"priority": 7
+		},
+		{
+			"name": "Scampia",
+			"priority": 5
+		},
+		{
+			"name": "Secondigliano",
+			"priority": 9
+		},
+		{
+			"name": "Zona Industriale",
+			"priority": 8
+		}
+	]
+}
