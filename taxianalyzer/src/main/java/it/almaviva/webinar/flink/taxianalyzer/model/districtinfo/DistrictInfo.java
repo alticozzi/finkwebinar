@@ -38,4 +38,11 @@ public class DistrictInfo {
     public void setNumBusyTaxi(int numBusyTaxi) {
         this.numBusyTaxi = numBusyTaxi;
     }
+
+    @Override
+    public String toString() {
+        return "DistrictInfo [district=" + district + ", numFreeTaxi=" + numFreeTaxi
+                + ", numBusyTaxi=" + numBusyTaxi + "]";
+    }
+    
 }
